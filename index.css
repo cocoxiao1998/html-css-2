@@ -1,0 +1,260 @@
+/* Color Palette
+HEX: #a2b9bc - turquoise
+HEX: #b2ad7f - military green
+HEX: #878f99 - gray
+HEX: #6b5b95 - purple
+HEX: #ffffff - white
+HEX: #001a33 - navy blue
+*/
+
+/* Global Styles
+------------------------------ */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    font-size: 1.25em;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Bahianita', cursive;
+    margin: 0;
+    padding-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 6em;
+    padding-top: .75em;
+  }
+  
+  h2 {
+    font-size: 2.5em;
+  }
+  
+  h3 {
+    font-size: 1.75em;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .content_wrapper {
+    padding: 3em 1.5em 1.5em 1.5em;
+    margin: 0 auto;
+    width: 80%;
+    overflow: auto;
+  }
+  
+  .note:before {
+    content: "★";
+  }
+  
+  .status {
+    text-transform: uppercase;
+  }
+  
+  
+  /* Header & Footer
+  ------------------------------ */
+  header, footer {
+    background: #001a33;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  header {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 26, 51, 0.2), rgba(0, 26, 51, 0.5)), url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1082&q=80) no-repeat fixed;
+    background-size: cover;
+    padding-top: 3em;
+  }
+  
+  header p {
+    font-size: 1.5em;
+  }
+  
+  footer {
+    background: url(https://images.unsplash.com/photo-1521036392421-35d436448d6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat fixed;
+    background-size: cover;
+  }
+  
+  .contact {
+    margin: 1.5em;
+  }
+  
+  .contact a {
+    font-size: 2em;
+    margin: 1em; 
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  /* Navigation
+  ------------------------------ */
+  nav {
+    font-size: .75em;
+    padding-top: 2em;
+    text-align: right;
+    margin-bottom: 1.75em;
+    padding-right: 2.5em;
+    width: 100%;
+    position: fixed;
+    top: 0;
+  }
+  
+  .book-animation {
+    display: inline-block;
+    position: absolute;
+    font-size: 3em;
+    top: .5em;
+    left: 1.25em;
+    animation: bounce 2s ease-out 1s infinite;
+  }
+  
+  @keyframes
+  bounce {
+    0% {
+      top: 0.5em;
+      left: 1.25em;
+    }
+    33% {
+      top: 1.25em;
+      left: 2.25em;
+    }
+    66% {
+      top: 1.25em;
+      left: 1.25em;
+    }
+    100% {
+      top: 0.5em;
+      left: 1.25em; 
+    }
+  }
+  
+  nav a {
+    display: inline-block;
+    padding: .75em 1em;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  .drop-down {
+    position: absolute;
+    right: 3.25em;
+    display: inline-block;
+  }
+  
+  .nav-bar {
+    outline: none;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 2.5em;
+  }
+  
+  .nav-bar:hover {
+    color: beige;
+  }
+  
+  .drop-down-content a{
+    display: block;
+    margin: 0; 
+  }
+  
+  
+  /* About
+  ------------------------------ */
+  .about {
+    background: #c2ac99;
+  }
+  
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 50%;
+  }
+  
+  .about-img {
+    border-radius: 50%;
+    height: 15em;
+    width: 15em;
+  }
+  
+    /* Genre
+  ------------------------------ */
+  .genre {
+    background: #b2ad7f;
+  }
+  
+  /* Fantasy
+  ------------------------------ */
+  .fantasy {
+    background: #878f99;
+  }
+  
+  h3 ~ p {
+    margin: 0;
+  }
+  
+  .evaluation {
+    margin-bottom: 2em;
+  }
+  
+  .evaluation p:first-of-type {
+    margin: 0;
+  }
+  
+  /* Footer
+  ------------------------------ */
+  footer h2 {
+    padding-bottom: 0;
+  }
+  
+  /* CSS grid layout
+  ------------------------------ */
+  @supports (grid-area: auto) {
+
+  }
+
+  /* Media queries
+  ------------------------------ */
+
+  @media (min-width: 900px) {
+    .col_narrow {
+      width: 40%;
+      float: left;
+    }
+  
+    .col_wide {
+      width: 60%;
+      float: left;
+      padding-left: 3em;
+    }
+  }
+  
+  @media (max-width: 899px) {
+    .profile_img {
+      max-width: 150px;
+    }
+  }
+  
