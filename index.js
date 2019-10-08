@@ -32,12 +32,9 @@ function reveal(size) {
 
 // if the window is clicked, dropdown menu options will disappear
 window.onclick = function(event) {
-    console.log("testing 1")
     if (!event.target.matches(".nav-bar")) {
-        console.log("testing 2")
         if(!DROP_DOWN_CONTENT.classList.contains("hide")) {
             DROP_DOWN_CONTENT.classList.toggle("hide")
-            console.log("testing 3")
         }
     }
 }

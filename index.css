@@ -190,13 +190,7 @@ HEX: #001a33 - navy blue
   .cards {
     max-width: 20em;
     margin: 0 auto;
-    display: block;
   }
-
-  /* .card {
-    padding-left: 3.75em;
-    max-width: 25em;
-  } */
   
   /* About
   ------------------------------ */
@@ -241,28 +235,50 @@ HEX: #001a33 - navy blue
   /* CSS grid layout
   ------------------------------ */
   @supports (grid-area: auto) {
-    
+    @media (min-width: 900px) {
+      /* Outer grid */
+      .site {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh auto auto;
+        grid-template-areas: "header" "main" "footer";
+      }
+
+      header {
+        grid-area: header;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+      }
+
+      /* Inner grid */
+      .main-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "about genre" 
+                   "fantasy fantasy";
+      }
+
+      .about {
+        grid-area: about;
+      }
+
+      .genre {
+        grid-area: genre;
+      }
+
+      .fantasy {
+        grid-area: fantasy;
+      }
+    }
   }
 
   /* Media queries
   ------------------------------ */
-
-  @media (min-width: 900px) {
-    .col_narrow {
-      width: 40%;
-      float: left;
-    }
-  
-    .col_wide {
-      width: 60%;
-      float: left;
-      padding-left: 3em;
-    }
-  }
-  
-  @media (max-width: 899px) {
-    .profile_img {
-      max-width: 150px;
-    }
-  }
   
