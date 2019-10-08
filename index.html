@@ -35,102 +35,99 @@
     <p>Textbooks. I hate. Leisure Books. I enjoy.</p>
   </header>
 
-  <main>
+  <main class="main-area">
     <!-- About Section -->
     <section id="about" class="about">
       <h2>About Me</h2>
-      <p>
-        I am a Computer Science major at SUNY Fredonia trying to figure out what to do with my life.
-      </p>
-      <ul>
-        <li>I enjoy reading leisure books in my spare time</li>
-        <li>Some of my favorite people include Sammie and Peter</li>
-      </ul>
-      <img src="https://images.unsplash.com/photo-1527352675495-d54e8f102689?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="about-img center">
+      <div class="cards">
+        <ul>
+          <li>I enjoy reading leisure books in my spare time</li>
+          <li>Some of my favorite people include Sammie and Peter</li>
+        </ul>
+      </div>
+      <!-- <img src="https://images.unsplash.com/photo-1527352675495-d54e8f102689?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80" class="about-img center"> -->
     </section>
 
     <!-- Genre Section -->
     <section id="genre" class="genre">
       <h2>Genre</h2>
-      <p>
-        I like a variety of genres. When I was younger, I would always read books aimed towards younger children such as the Junie B. Jones series. As I grew older, my tastes changed. 
-      </p>  
-      <p>Some of the genres I like include:</p>
-      <ul>
-        <li>fantasy</li>
-        <li>romance</li>
-        <li>young adult</li>
-        <li>tragedies</li>
-      </ul>
+      <div class="cards">
+        <ul>
+          <li>fantasy</li>
+          <li>romance</li>
+          <li>young adult</li>
+          <li>tragedies</li>
+        </ul>
+      </div>
     </section>
     
     <!-- Fantasy -->
     <section id="fantasy" class="fantasy">
       <h2>Fantasy</h2>
       <!-- Book 1 Details -->
-      <h3>&ldquo;Percy Jackson &amp; the Olympians&rdquo;</h3>
-      <p class="status">Status: finished</p>
-      <p class="note">One of the first series I have read.</p>
-      <p>Pros:</p>
-      <ul>
-        <li>world building</li>
-        <li>character growth</li>
-        <li>relationship development between the characters</li>
-      </ul>
-      <p>Cons:</p>
-      <ul>
-        <li>childish main antagonist</li>
-        <li>inconsistent level of power for the main character</li>
-      </ul>
-      <!-- Book 2 Details -->
-      <h2>&ldquo;The Beginning After The End&rdquo;</h2>
-      <p class="status">Status: currently on Book 5</p>
-      <p class="note">Started reading this after I came across the webtoon.</p>
-      <p>Pros: </p>
-      <ul>
-        <li>the emotions... I cried</li>
-        <li>timeline</li>
-        <li>characters</li>
-      </ul>
-      <p>Cons: </p>
-      <ul>
-        <li>pacing in some arcs</li>
-        <li>overpowered main character</li>
-        <li>school arc was too chaotic</li>
-      </ul>
-      <!-- Book 3 Details -->
-      <h3>&ldquo;Awaken Online&ldquo;</h3>
-      <p class="status">: Currently on book 2.5</p>   
-      <p class="note">Recommended greatly by Justin</p>
-      <p>Pros:</p>
-      <ul>
-        <li>character development</li>
-        <li>world building of the game world</li>
-        <li>portrayal of characters' emotions</li>
-      </ul>
-      <p>Cons:</p>
-      <ul>
-        <li>overpowered main character</li>
-        <li>childish antagonist</li>
-        <li>one dimensional side characters</li>
-      </ul>
+      <div class="cards">
+        <div class="card">
+          <h3>&ldquo;Percy Jackson &amp; the Olympians&rdquo;</h3>
+          <p>Pros:</p>
+          <ul>
+            <li>world building</li>
+            <li>character growth</li>
+            <li>relationship development between the characters</li>
+          </ul>
+          <p>Cons:</p>
+          <ul>
+            <li>childish main antagonist</li>
+            <li>inconsistent level of power for the main character</li>
+          </ul>
+        </div> 
+        <!-- Book 2 Details -->
+        <div class="card">
+          <h3>&ldquo;The Beginning After The End&rdquo;</h3>
+          <p>Pros: </p>
+          <ul>
+            <li>the emotions... I cried</li>
+            <li>timeline</li>
+            <li>characters</li>
+          </ul>
+          <p>Cons: </p>
+          <ul>
+            <li>pacing in some arcs</li>
+            <li>overpowered main character</li>
+            <li>school arc was too chaotic</li>
+          </ul>
+        </div>
+        <!-- Book 3 Details -->
+        <div class="card">
+          <h3>&ldquo;Awaken Online&ldquo;</h3>
+          <p>Pros:</p>
+          <ul>
+            <li>character development</li>
+            <li>world building of the game world</li>
+            <li>portrayal of characters' emotions</li>
+          </ul>
+          <p>Cons:</p>
+          <ul>
+            <li>overpowered main character</li>
+            <li>childish antagonist</li>
+            <li>one dimensional side characters</li>
+          </ul>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <!-- Contact Information -->
-    <div id="contact" class="contact">
-      <h2>Contact Information</h2>
-      <a href="https://www.linkedin.com/in/coco-xiao-5b1ba617b/">   
-        <i class="fab fa-linkedin" aria-hidden="true"></i>
-        <span class="sr-only">LinkedIn</span>
-      </a>
-      <a href="https://www.facebook.com/coco.xiao.79">
-        <i class="fab fa-facebook" aria-hidden="true"></i>
-        <span class="sr-only">Facebook</span>
-      </a>
-      <p>Copyright &copy; 2019 Coco Xiao</p>
-    </div>
+  <!-- Contact Information -->
+  <footer id="contact" class="contact">
+    <h2>Contact Information</h2>
+    <a href="https://www.linkedin.com/in/coco-xiao-5b1ba617b/">   
+      <i class="fab fa-linkedin" aria-hidden="true"></i>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+    <a href="https://www.facebook.com/coco.xiao.79">
+      <i class="fab fa-facebook" aria-hidden="true"></i>
+      <span class="sr-only">Facebook</span>
+    </a>
+    <p>Copyright &copy; 2019 Coco Xiao</p>
   </footer>
 
 </body>

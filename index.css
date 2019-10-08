@@ -7,9 +7,10 @@ HEX: #ffffff - white
 HEX: #001a33 - navy blue
 */
 
+
 /* Global Styles
 ------------------------------ */
-* {
+  * {
     box-sizing: border-box;
   }
   
@@ -22,24 +23,23 @@ HEX: #001a33 - navy blue
   h1, h2, h3 {
     font-family: 'Bahianita', cursive;
     margin: 0;
-    padding-bottom: 0.5em;
   }
   
   h1 {
     font-size: 6em;
     padding-top: .75em;
+    padding-bottom: .5em;
   }
   
   h2 {
     font-size: 2.5em;
+    padding-top: .75em;
+    padding-left: 1.5em;
   }
   
   h3 {
     font-size: 1.75em;
-  }
-  
-  p {
-    margin: 0;
+    padding-bottom: .5em;
   }
   
   a {
@@ -49,14 +49,7 @@ HEX: #001a33 - navy blue
   
   a:hover {
     text-decoration: none;
-  }
-  
-  .content_wrapper {
-    padding: 3em 1.5em 1.5em 1.5em;
-    margin: 0 auto;
-    width: 80%;
-    overflow: auto;
-  }
+  }  
   
   .note:before {
     content: "★";
@@ -65,7 +58,12 @@ HEX: #001a33 - navy blue
   .status {
     text-transform: uppercase;
   }
-  
+
+  ul {
+    margin: 0;
+    padding-bottom: 2em;
+    list-style-type: square;
+  }
   
   /* Header & Footer
   ------------------------------ */
@@ -84,15 +82,22 @@ HEX: #001a33 - navy blue
   
   header p {
     font-size: 1.5em;
+    padding: 0 1em;
   }
   
   footer {
     background: url(https://images.unsplash.com/photo-1521036392421-35d436448d6a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80) no-repeat fixed;
     background-size: cover;
   }
-  
-  .contact {
-    margin: 1.5em;
+
+  footer h2 {
+    padding-left: 0;
+    padding-bottom: .5em;
+  }
+
+  footer p {
+    margin: 0;
+    padding: 1.25em 0;
   }
   
   .contact a {
@@ -179,7 +184,19 @@ HEX: #001a33 - navy blue
     display: block;
     margin: 0; 
   }
-  
+   
+  /* Cards
+  ------------------------------ */
+  .cards {
+    max-width: 20em;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* .card {
+    padding-left: 3.75em;
+    max-width: 25em;
+  } */
   
   /* About
   ------------------------------ */
@@ -205,35 +222,26 @@ HEX: #001a33 - navy blue
   .genre {
     background: #b2ad7f;
   }
+
   
   /* Fantasy
   ------------------------------ */
   .fantasy {
     background: #878f99;
   }
+
+  .fantasy h2 {
+    padding-bottom: .75em;
+  }
   
   h3 ~ p {
     margin: 0;
   }
   
-  .evaluation {
-    margin-bottom: 2em;
-  }
-  
-  .evaluation p:first-of-type {
-    margin: 0;
-  }
-  
-  /* Footer
-  ------------------------------ */
-  footer h2 {
-    padding-bottom: 0;
-  }
-  
   /* CSS grid layout
   ------------------------------ */
   @supports (grid-area: auto) {
-
+    
   }
 
   /* Media queries
