@@ -1,0 +1,46 @@
+  /* CSS grid layout
+  ------------------------------ */
+  @supports (grid-area: auto) {
+    @media (min-width: 900px) {
+      /* Outer grid */
+      .site {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 100vh auto auto;
+        grid-template-areas: "header" "main" "footer";
+      }
+
+      header {
+        grid-area: header;
+      }
+
+      main {
+        grid-area: main;
+      }
+
+      footer {
+        grid-area: footer;
+      }
+
+      /* Inner grid */
+      .main-area {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: "about genre" 
+                             "fantasy fantasy";
+      }
+
+      .about {
+        grid-area: about;
+      }
+
+      .genre {
+        grid-area: genre;
+      }
+
+      .fantasy {
+        grid-area: fantasy;
+      }
+    }
+  }
